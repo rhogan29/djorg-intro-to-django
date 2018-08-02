@@ -3,4 +3,4 @@ from .models import Note
 from .models import PersonalNote
 
 # Register your models here.
-admin.site.register((Note, PersonalNote) )
+admin.site.register((Note, PersonalNote))
