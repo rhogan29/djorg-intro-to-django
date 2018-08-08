@@ -60,13 +60,6 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware'
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'google.com',
-    'hostname.example.com',
-    'localhost:3000',
-    '127.0.0.1:9000'
-)
-
 ROOT_URLCONF = 'djorg.urls'
 
 TEMPLATES = [
@@ -86,6 +79,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djorg.wsgi.application'
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Database
