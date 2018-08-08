@@ -28,6 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
+CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS=['localhost', '127.0.0.1', 'robert-hogan-djorg.herokuapp.com']
 #completed. added user.
 
@@ -79,8 +80,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djorg.wsgi.application'
-
-CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Database
